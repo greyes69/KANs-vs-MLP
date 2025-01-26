@@ -1,2 +1,2 @@
-# KANs-vs-MLP
-KANs against conventional MLP
+This code implements: a KANN and a conventional FF NN (MLP) to approximate a function and shows the evolution of both the training and the validation errors over time. 
+The conclusion after a number of experiments is that KANNs with, say 5 component functions and 10 hidden neurons in each univariate sub-network, performs better (on average) than a fully connected MLP with 3 internal layers of 20 neurons. The MLP learns faster over the earlier epochs but the KANN catches up at some point and keeps decreasing the validation error after the the MLP saturates.
